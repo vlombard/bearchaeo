@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/bearchaeo/ArchaeomRecord-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/bearchaeo/ArchaeomRecord-ontology">
+    <Prefix name="" IRI="http://purl.org/bearchaeo/ArchaeomRecord-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/ArchaeologicalFindingRecord-ontology#AF_Record"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchaeometricInvestigationCR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_acquisition_or_creation_CR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_interpretation_CR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_processing_or_modeling_CR"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArchaeometricInvestigation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInputOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/terms/medium"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAcquisitionCreationDetails"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasArchaeometricInvestigationType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInterpretationDetails"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInterpretationTerm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInvestigationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInvestigationDetails"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcessingModelingDetails"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_acquisition_or_creation_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_interpretation_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_processing_or_modeling_type"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Data_acquisition_or_creation_CR"/>
+        <Class IRI="#ArchaeometricInvestigationCR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_interpretation_CR"/>
+        <Class IRI="#ArchaeometricInvestigationCR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_processing_or_modeling_CR"/>
+        <Class IRI="#ArchaeometricInvestigationCR"/>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInput"/>
+        <ObjectProperty IRI="#isInputOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArchaeometricInvestigation"/>
+        <Class IRI="https://purl.org/bearchaeo/ArchaeologicalFindingRecord-ontology#AF_Record"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasArchaeometricInvestigation"/>
+        <Class IRI="#ArchaeometricInvestigationCR"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAcquisitionCreationDetails"/>
+        <DataProperty IRI="#hasInvestigationDetails"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasInterpretationDetails"/>
+        <DataProperty IRI="#hasInvestigationDetails"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasProcessingModelingDetails"/>
+        <DataProperty IRI="#hasInvestigationDetails"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_acquisition_or_creation_type"/>
+        <DataProperty IRI="#hasArchaeometricInvestigationType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_interpretation_type"/>
+        <DataProperty IRI="#hasArchaeometricInvestigationType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_processing_or_modeling_type"/>
+        <DataProperty IRI="#hasArchaeometricInvestigationType"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAcquisitionCreationDetails"/>
+        <Class IRI="#Data_acquisition_or_creation_CR"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInterpretationDetails"/>
+        <Class IRI="#Data_interpretation_CR"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcessingModelingDetails"/>
+        <Class IRI="#Data_processing_or_modeling_CR"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_acquisition_or_creation_type"/>
+        <Class IRI="#Data_acquisition_or_creation_CR"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAcquisitionCreationDetails"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInterpretationDetails"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInvestigationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProcessingModelingDetails"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_acquisition_or_creation_type"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/description</IRI>
+        <Literal xml:lang="en">DESCRIPTION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/description</IRI>
+        <Literal xml:lang="en">Description property in Dublic Core terms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/medium</IRI>
+        <Literal xml:lang="en">Medium property in Dublic Core.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/medium</IRI>
+        <Literal xml:lang="en">MEDIA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/title</IRI>
+        <Literal xml:lang="en">Title property in Dublic Core terms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/title</IRI>
+        <Literal xml:lang="en">TITLE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArchaeometricInvestigationCR</IRI>
+        <Literal xml:lang="en">Catalogue record for the archaeometric investigations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ArchaeometricInvestigationCR</IRI>
+        <Literal xml:lang="en">Archaeometric Investigation Catalogue Record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Data_acquisition_or_creation_CR</IRI>
+        <Literal xml:lang="en">Data acquisition/creation catalogue record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Data_interpretation_CR</IRI>
+        <Literal xml:lang="en">Data interpretation catalogue record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Data_processing_or_modeling_CR</IRI>
+        <Literal xml:lang="en">Data processing/modeling catalogue record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAcquisitionCreationDetails</IRI>
+        <Literal xml:lang="en">This data property links the record to the details of the acquisition or creation process (can be a text or an URI to a file).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAcquisitionCreationDetails</IRI>
+        <Literal xml:lang="en">ACQUISITION/CREATION DETAILS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasArchaeometricInvestigation</IRI>
+        <Literal xml:lang="en">Given an archaeological finding, this property links it with the archaeometric investigations carried out on it or data processed and interpreted after the acquisition/creation from it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasArchaeometricInvestigation</IRI>
+        <Literal xml:lang="en">has archaeometric investigation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasArchaeometricInvestigationType</IRI>
+        <Literal xml:lang="en">This property links an archaeometric record to the type of investigation carried out. It can be a string or some URI from a vocabulary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasArchaeometricInvestigationType</IRI>
+        <Literal xml:lang="en">has archaeometric investigation type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInput</IRI>
+        <Literal xml:lang="en">This property links some archeometric investigation with the data in input, could it be an Archaeological Finding or some data already processed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInput</IRI>
+        <Literal xml:lang="en">INPUT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInterpretationDetails</IRI>
+        <Literal xml:lang="en">This data property links the record to the details of the interpretation process (can be a text or an URI to a file).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInterpretationDetails</IRI>
+        <Literal xml:lang="en">INTERPRETATION DETAILS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInterpretationTerm</IRI>
+        <Literal xml:lang="en">This property links the interpretation record to a term from some vocabiulary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInterpretationTerm</IRI>
+        <Literal xml:lang="en">INTERPRETATION TERM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInvestigationDate</IRI>
+        <Literal xml:lang="en">The date of the investigation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInvestigationDate</IRI>
+        <Literal xml:lang="en">INVESTIGATION DATE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInvestigationDetails</IRI>
+        <Literal xml:lang="en">has investigation details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasProcessingModelingDetails</IRI>
+        <Literal xml:lang="en">This data property links the record to the details of the processing or modeling process (can be a text or an URI to a file).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasProcessingModelingDetails</IRI>
+        <Literal xml:lang="en">PROCESSING/MODELING DETAILS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_acquisition_or_creation_type</IRI>
+        <Literal xml:lang="en">ACQUISITION/CREATION TYPE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_interpretation_type</IRI>
+        <Literal xml:lang="en">INTERPRETATION TYPE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_processing_or_modeling_type</IRI>
+        <Literal xml:lang="en">PROCESSING/MODELING TYPE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInputOf</IRI>
+        <Literal xml:lang="en">INPUT OF</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

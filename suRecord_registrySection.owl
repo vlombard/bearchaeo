@@ -1,0 +1,712 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/bearchaeo/suRecordRegistry-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/bearchaeo/suRecordRegistry-ontology">
+    <Prefix name="" IRI="https://purl.org/bearchaeo/suRecordRegistry-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_subfield"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_registryField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_registrySection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_registrySubfield"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TMA_f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#elevationDrawings_f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#geographicalLocation_f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#materialRow_sf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#photos_f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plans_f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sections_f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasField"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSubfield"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasElevationDrawings_f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeographicalLocation_f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterialRow_sf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhotos_f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlans_f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegistrySection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSections_f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTableOfMaterials_f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isElevationDrawingOf_sf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMaterialRow_sfOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#alt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAcronym_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasArea_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBeArchaeoMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDefinition_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGettyAAT_Material"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumber_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPosition_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRoom_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSector_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSite_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSquare_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTrench_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#long"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxElevation_fv"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minElevation_fv"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#SU_registrySection"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasField"/>
+                <Class IRI="#SU_registryField"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#SU_registryField"/>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SU_registrySection"/>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SU_registrySubfield"/>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_subfield"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TMA_f"/>
+        <Class IRI="#SU_registryField"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#elevationDrawings_f"/>
+        <Class IRI="#SU_registryField"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#geographicalLocation_f"/>
+        <Class IRI="#SU_registryField"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#materialRow_sf"/>
+        <Class IRI="#SU_registrySubfield"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#photos_f"/>
+        <Class IRI="#SU_registryField"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plans_f"/>
+        <Class IRI="#SU_registryField"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sections_f"/>
+        <Class IRI="#SU_registryField"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasElevationDrawings_f"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasField"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGeographicalLocation_f"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasField"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMaterialRow_sf"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSubfield"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPhotos_f"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasField"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPlans_f"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasField"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRegistrySection"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSections_f"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasField"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTableOfMaterials_f"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasField"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isElevationDrawingOf_sf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMaterialRow_sfOf"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSubfield"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMaterialRow_sf"/>
+        <ObjectProperty IRI="#isMaterialRow_sfOf"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasElevationDrawings_f"/>
+        <Class IRI="#SU_registrySection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGeographicalLocation_f"/>
+        <Class IRI="#SU_registrySection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaterialRow_sf"/>
+        <Class IRI="#TMA_f"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhotos_f"/>
+        <Class IRI="#SU_registrySection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlans_f"/>
+        <Class IRI="#SU_registrySection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSections_f"/>
+        <Class IRI="#SU_registrySection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTableOfMaterials_f"/>
+        <Class IRI="#SU_registrySection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasElevationDrawings_f"/>
+        <Class IRI="#elevationDrawings_f"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGeographicalLocation_f"/>
+        <Class IRI="#geographicalLocation_f"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaterialRow_sf"/>
+        <Class IRI="#materialRow_sf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPhotos_f"/>
+        <Class IRI="#photos_f"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlans_f"/>
+        <Class IRI="#plans_f"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRegistrySection"/>
+        <Class IRI="#SU_registrySection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSections_f"/>
+        <Class IRI="#sections_f"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTableOfMaterials_f"/>
+        <Class IRI="#TMA_f"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNumber_f"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maxElevation_fv"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minElevation_fv"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#alt"/>
+        <Class IRI="#geographicalLocation_f"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAmount"/>
+        <Class IRI="#materialRow_sf"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBeArchaeoMaterial"/>
+        <Class IRI="#materialRow_sf"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGettyAAT_Material"/>
+        <Class IRI="#materialRow_sf"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lat"/>
+        <Class IRI="#geographicalLocation_f"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#long"/>
+        <Class IRI="#geographicalLocation_f"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#alt"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAcronym_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAmount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasArea_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBeArchaeoMaterial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDate_f"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDefinition_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGettyAAT_Material"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPosition_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRoom_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSector_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSite_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSquare_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTrench_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lat"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#long"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maxElevation_fv"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minElevation_fv"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TMA_f</IRI>
+        <Literal>TABLE OF MATERIALS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#alt</IRI>
+        <Literal>This property connects the field of altitude to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#alt</IRI>
+        <Literal>Altitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#elevationDrawings_f</IRI>
+        <Literal>ELEVATION DRAWINGS #</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#geographicalLocation_f</IRI>
+        <Literal>Latitude, longitude, and altitude of the Stratigraphic Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#geographicalLocation_f</IRI>
+        <Literal>GEOGRAPHICAL LOCATION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAcronym_f</IRI>
+        <Literal>This property connects the field of acronym to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAcronym_f</IRI>
+        <Literal>ACRONYM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAmount</IRI>
+        <Literal>This property connects the field of N to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAmount</IRI>
+        <Literal>N</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasArea_f</IRI>
+        <Literal>This property connects the field of area to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasArea_f</IRI>
+        <Literal>AREA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBeArchaeoMaterial</IRI>
+        <Literal>This property connects the field of AF BE-ARCHAEO to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasBeArchaeoMaterial</IRI>
+        <Literal>AF BE-ARCHAEO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDate_f</IRI>
+        <Literal>This property connects the field of date to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDate_f</IRI>
+        <Literal>DATE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDefinition_f</IRI>
+        <Literal>This property connects the field of definition to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDefinition_f</IRI>
+        <Literal>DEFINITION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasElevationDrawings_f</IRI>
+        <Literal>ELEVATION DRAWINGS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasGeographicalLocation_f</IRI>
+        <Literal>GEOGRAPHICAL LOCATION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGettyAAT_Material</IRI>
+        <Literal>This property connects the field of AF Getty-AAT to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasGettyAAT_Material</IRI>
+        <Literal>AF Getty-AAT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMaterialRow_sf</IRI>
+        <Literal>MATERIAL ROW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNumber_f</IRI>
+        <Literal>This property connects the field of SU number to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNumber_f</IRI>
+        <Literal>SU number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhotos_f</IRI>
+        <Literal>PHOTOS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPlans_f</IRI>
+        <Literal>PLANS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPosition_f</IRI>
+        <Literal>This property connects the field of position to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPosition_f</IRI>
+        <Literal>POSITION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRegistrySection</IRI>
+        <Literal>REGISTRY SECTION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRoom_f</IRI>
+        <Literal>This property connects the field of room to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRoom_f</IRI>
+        <Literal>ROOM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSections_f</IRI>
+        <Literal>SECTIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSector_f</IRI>
+        <Literal>This property connects the field of sector to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSector_f</IRI>
+        <Literal>SECTOR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSite_f</IRI>
+        <Literal>This property connects the field of site to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSite_f</IRI>
+        <Literal>SITE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSquare_f</IRI>
+        <Literal>This property connects the field of square to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSquare_f</IRI>
+        <Literal>SQUARE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTableOfMaterials_f</IRI>
+        <Literal>TMA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTrench_f</IRI>
+        <Literal>This property connects the field of trench to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTrench_f</IRI>
+        <Literal>TRENCH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isElevationDrawingOf_sf</IRI>
+        <Literal>This property connects to the indication the elevation drawings of the stratigraphic unit to the catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isMaterialRow_sfOf</IRI>
+        <Literal>This property connects a row of materials its table of materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lat</IRI>
+        <Literal>This property connects the field of latitude to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lat</IRI>
+        <Literal>Latitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#long</IRI>
+        <Literal>This property connects the field of longitude to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#long</IRI>
+        <Literal>Longitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#materialRow_sf</IRI>
+        <Literal>MATERIAL ROW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maxElevation_fv</IRI>
+        <Literal>This property connects the field of MAX ELEVATION IN m a.s.l. to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maxElevation_fv</IRI>
+        <Literal>MAX ELEVATION IN m a.s.l.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#minElevation_fv</IRI>
+        <Literal>This property connects the field of MIN ELEVATION IN m a.s.l. to the registry section of the stratigraphic unit catalogue record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#minElevation_fv</IRI>
+        <Literal>MIN ELEVATION IN m a.s.l.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#photos_f</IRI>
+        <Literal>PHOTOS #</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#plans_f</IRI>
+        <Literal>PLANS #</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sections_f</IRI>
+        <Literal>SECTIONS #</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

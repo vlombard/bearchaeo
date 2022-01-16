@@ -1,0 +1,539 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/bearchaeo/suRecordDescription-ontology#"
+     xml:base="https://purl.org/bearchaeo/suRecordDescription-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/bearchaeo/suRecord-ontology#hasSection -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasDescriptiveSection -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasDescriptiveSection">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:comment>This section is used to describe the unit through its the first and overall interpretations which were employed by the archaeologist to identify such a stratum in the soil and inclusions.</rdfs:comment>
+        <rdfs:label>DESCRIPTIVE SECTION</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasColorTerm_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasColorTerm_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>COLOR TERM</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasCompaction_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasCompaction_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Compact</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Friable</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Hard</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Loose</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Soft</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label>COMPACTION</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasDescription_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasDescription_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>DESCRIPTION</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasDistinguishingCriterion_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasDistinguishingCriterion_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Color</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Compaction</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Composition</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label>DISTINGUISHING CRITERIA</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasFormationProcess_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasFormationProcess_f">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Accumulation</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Construction</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Cutting</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Deposition</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Destruction</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Erosion</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Use</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label>FORMATION PROCESS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasFrequentInclusionType_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasFrequentInclusionType_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>FREQUENT INCLUSIONS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasLimit_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasLimit_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Excavation</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Not original</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Original</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label>LIMITS OF THE UNIT</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasMeasurements_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasMeasurements_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>MEASUREMENTS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasMediumInclusionType_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasMediumInclusionType_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>MEDIUM INCLUSIONS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasMunsellCode_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasMunsellCode_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>MUNSELL CODE</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasObservation_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasObservation_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>OBSERVATION</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasOtherFormationProcess_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasOtherFormationProcess_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>OTHER FORMATION PROCESS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasOtherInclusionType_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasOtherInclusionType_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>OTHER INCLUSIONS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasRareInclusionType_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasRareInclusionType_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>RARE INCLUSIONS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasSoilMatrix_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasSoilMatrix_f">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Clay</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Sand</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>SandyClay</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>SandyStilty</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Silt</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>SiltyClay</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label>SOIL/MATRIX</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasStateOfPreservation_f -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasStateOfPreservation_f">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>STATE OF PRESERVATION</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#isArtificial -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#isArtificial">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#isNatural -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#isNatural">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#isOrganic -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#isOrganic">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#isSU+ -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#isSU+">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord -->
+
+    <owl:Class rdf:about="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+    
+
+
+    <!-- https://purl.org/bearchaeo/suRecord-ontology#SU_section -->
+
+    <owl:Class rdf:about="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection">
+        <rdfs:subClassOf rdf:resource="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#Accumulation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#Accumulation">
+        <rdfs:label>Accumulation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#Construction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#Construction">
+        <rdfs:label>Construction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#Cutting -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#Cutting">
+        <rdfs:label>Cutting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#Deposition -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#Deposition">
+        <rdfs:label>Deposition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#Destruction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#Destruction">
+        <rdfs:label>Destruction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#Erosion -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#Erosion">
+        <rdfs:label>Erosion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#Other -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#Other"/>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#Use -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#Use">
+        <rdfs:label>Use</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/bearchaeo/suRecordSampling-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/bearchaeo/suRecordSampling-ontology">
+    <Prefix name="" IRI="https://purl.org/bearchaeo/suRecordSampling-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_subfield"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_samplingSection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallFindRow_sf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallFinds_f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSamplingSection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSmallFindRow_sf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSmallFinds_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFindsQuantitativeData_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSmallFindRowAmount_sf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSmallFindRowDefinition_sf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSoilFlotation_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSoilSamples_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSoilSieving_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStratigraphicReliability_f"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#SU_samplingSection"/>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallFindRow_sf"/>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_subfield"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallFinds_f"/>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_field"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSamplingSection"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSmallFindRow_sf"/>
+        <Class IRI="#SmallFinds_f"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSmallFinds_f"/>
+        <Class IRI="#SU_samplingSection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSamplingSection"/>
+        <Class IRI="#SU_samplingSection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSmallFindRow_sf"/>
+        <Class IRI="#SmallFindRow_sf"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasFindsQuantitativeData_f"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSmallFindRowAmount_sf"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSmallFindRowDefinition_sf"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSoilFlotation_f"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSoilSamples_f"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSoilSieving_f"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFindsQuantitativeData_f"/>
+        <Class IRI="#SU_samplingSection"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSmallFindRowAmount_sf"/>
+        <Class IRI="#SmallFindRow_sf"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSmallFindRowDefinition_sf"/>
+        <Class IRI="#SmallFindRow_sf"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSoilFlotation_f"/>
+        <Class IRI="#SU_samplingSection"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSoilSamples_f"/>
+        <Class IRI="#SU_samplingSection"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSoilSieving_f"/>
+        <Class IRI="#SU_samplingSection"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStratigraphicReliability_f"/>
+        <Class IRI="#SU_samplingSection"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFindsQuantitativeData_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSmallFindRowAmount_sf"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSmallFindRowDefinition_sf"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSoilFlotation_f"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSoilSamples_f"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSoilSieving_f"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStratigraphicReliability_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFindsQuantitativeData_f</IRI>
+        <Literal>FINDS QUANTITATIVE DATA (text explanation)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSamplingSection</IRI>
+        <Literal>This section is filled in laboratory if it is performed sampling during the excavation and indicating the numbers for description and identification of samples.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSamplingSection</IRI>
+        <Literal>SAMPLING SECTION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSmallFindRowAmount_sf</IRI>
+        <Literal>SMALL FIND # (integer)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSmallFindRowDefinition_sf</IRI>
+        <Literal>SMALL FIND DEFINITION (AF number)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSmallFindRow_sf</IRI>
+        <Literal>SMALL FIND ROW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSmallFinds_f</IRI>
+        <Literal>SMALL FINDS (# and definition)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSoilFlotation_f</IRI>
+        <Literal>FLOTATION (%)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSoilSamples_f</IRI>
+        <Literal>SOIL SAMPLES (%)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSoilSieving_f</IRI>
+        <Literal>SIEVING (%)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStratigraphicReliability_f</IRI>
+        <Literal>STRATIGRAPHIC RELIABILITY</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

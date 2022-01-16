@@ -1,0 +1,1683 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/bearchaeo/Archaeo-ontology#"
+     xml:base="http://purl.org/bearchaeo/Archaeo-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:suRecord-ontology="http://purl.org/beArcheo/suRecord-ontology#">
+    <owl:Ontology rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P2_has_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:comment>Reference to CIDOC-CRM CRMarchaeo property.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP15i_is_or_has_remains_contained_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP15i_is_or_has_remains_contained_in">
+        <rdfs:comment>Reference to CIDOC-CRM CRMarchaeo class.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP7_produced -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP7_produced">
+        <rdfs:comment>Reference to CIDOC-CRM CRMarchaeo class.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#abuts -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#abuts">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isAbuttedTo"/>
+        <rdfs:comment>The object property express the relation of the stratigraphic units&apos; that edges one another.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#belongsToCollection -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#belongsToCollection">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E78_Collection"/>
+        <rdfs:comment>The property links the archaeological finding to museum collection.</rdfs:comment>
+        <rdfs:label xml:lang="en">belongs to collection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#contains -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#contains">
+        <owl:inverseOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isContainedBy"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:comment>The property links the archaeological finding to the stratigraphic unit that is the source of (contains) it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#containsInclusion -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#containsInclusion">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+        <rdfs:comment>The property links the inclusions to the stratigraphic unit that is the source of (contains) it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#covers -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#covers">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isCoveredBy"/>
+        <rdfs:comment>The data property express the relation of the stratigraphic units&apos; that covers (stands over) one another.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#cuts -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#cuts">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isCutBy"/>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>The data property express the relation of the stratigraphic units&apos; that cuts one another.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#earlierThan -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#earlierThan">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#laterThan"/>
+        <rdfs:comment>The data property express the temporal relation of the stratigraphic units as earlier than.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#fills -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#fills">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isFilledBy"/>
+        <rdfs:comment>The data property express the relation of the stratigraphic units&apos; that has filled a cut.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#foundIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#foundIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isDirectlyRelatedTo"/>
+        <rdfs:comment>The object property links two of the archaeological finding that found in another.</rdfs:comment>
+        <rdfs:label>found in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasAF_type -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasAF_type">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#hasType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFindingType"/>
+        <rdfs:comment>This property relates an Archaelogical Finding with its type.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasArea -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasArea">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Area"/>
+        <rdfs:comment>The object property links soil/matrix to the its stratigraphic unit.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasChronology -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasChronology">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#StratigraphicUnit"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Chronology"/>
+        <rdfs:comment>The property express the chronology of the archaeological finding or stratigraphic unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">has chronology</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasColor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasColor">
+        <rdfs:domain rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#StratigraphicUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Color"/>
+        <rdfs:comment>The object property express the color of the stratigraphic unit and its domain is the stratigraphic unit.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasCompaction -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasCompaction">
+        <rdfs:domain rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#StratigraphicUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Compaction"/>
+        <rdfs:comment>The object property links compaction to the its stratigraphic unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Compaction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasComplexObjectRoot -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasComplexObjectRoot">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:comment>The object property links the complex archaeological finding(object) to its root object.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasDatingElement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasDatingElement">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:comment>The object property links the dating element(archaeological finding) to the its stratigraphic unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">has dating element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasElevation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasElevation">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Elevation"/>
+        <rdfs:comment>The object property links elevation informations such as drawings, photos etc. to the its stratigraphic unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">has elevation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasGenericInclusionType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasGenericInclusionType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusionType"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Generic_InclusionType"/>
+        <rdfs:label xml:lang="en">has generic inclusion type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasGeographicalPosition -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasGeographicalPosition">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:comment>The object property express the geographical location of the stratigraphic unit.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusion -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusion">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+        <rdfs:comment>The object property links inclusions to the its stratigraphic unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">has inclusion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusionFrequency -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusionFrequency">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#InclusionFrequency"/>
+        <rdfs:comment>The object property expresses the frequency of the inclusions found in the stratigraphic unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">has inclusion frequency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusionType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusionType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#hasType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+        <rdfs:comment>This property relates an inclusion with its type.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasMeasurements -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasMeasurements">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Measurements"/>
+        <rdfs:comment>The object property express the measurements of the stratigraphic unit.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasPart -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasPart">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:comment>The object property links to archaeological finding is one of them is a part of the other.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasRoom -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasRoom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Room"/>
+        <rdfs:comment>The object property of the room which the stratigraphic unit is belong to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasSector -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasSector">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Sector"/>
+        <rdfs:comment>The object property of the sector which the stratigraphic unit is belong to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasSite -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasSite">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Site"/>
+        <rdfs:comment>The object property of the site which the stratigraphic unit or archaeological finding is belong to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasSoil_Matrix -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasSoil_Matrix">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_SoilMatrix"/>
+        <rdfs:comment>The object property links soil/matrix to the its stratigraphic unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">has soil/matrix</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasSource -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasSource">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP15i_is_or_has_remains_contained_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:comment>The property links arcaheological finding to its source such as stratigraphic unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">has source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasSpecificInclusionType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasSpecificInclusionType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusionType"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Specific_InclusionType"/>
+        <rdfs:label xml:lang="en">has specific inclusion type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasSquare -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasSquare">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Square"/>
+        <rdfs:comment>The object property of the square which the stratigraphic unit is belong to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasTrench -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasTrench">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Trench"/>
+        <rdfs:comment>The object property of the trench which the stratigraphic unit is belong to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasType">
+        <rdfs:comment>The object property that associates a type to any object.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#isAbuttedTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#isAbuttedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:comment>Inverse of the &apos;abuts&apos;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#isBoundTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#isBoundTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:comment>The data property express the relation of the stratigraphic units&apos; that is a limit for one another.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#isContainedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#isContainedBy">
+        <rdfs:comment>Inverse of &apos;contains&apos;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#isCoveredBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#isCoveredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:comment>Inverse of the &apos;covers&apos;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#isCutBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#isCutBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:comment>Inverse of the &apos;cuts&apos;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#isDirectlyRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#isDirectlyRelatedTo">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:comment>The object property links the main finding to the archaeological finding that is a part of.</rdfs:comment>
+        <rdfs:label>is directly related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#isFilledBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#isFilledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:comment>Inverse of the &apos;fills&apos;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#isIndirectlyRelatedWith -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#isIndirectlyRelatedWith">
+        <owl:inverseOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isIndirectlyRelatedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:comment>The object property links two archaeological findings that are indirectly related to.</rdfs:comment>
+        <rdfs:label>is indirectly related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#laterThan -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#laterThan">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:comment>The data property express the temporal relation of the stratigraphic units as later than.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#locatedIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isDirectlyRelatedTo"/>
+        <rdfs:comment>The object property links two of the archaeological finding that located in another.</rdfs:comment>
+        <rdfs:label>located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#occurredIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#occurredIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isDirectlyRelatedTo"/>
+        <rdfs:comment>The object property links two of the archaeological finding that occured in another.</rdfs:comment>
+        <rdfs:label>occurred in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#originatedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#originatedIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isDirectlyRelatedTo"/>
+        <rdfs:comment>The object property links two of the archaeological finding that originated in another.</rdfs:comment>
+        <rdfs:label>originated in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#realizedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#realizedIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isDirectlyRelatedTo"/>
+        <rdfs:comment>The object property links two of the archaeological finding that realized in another.</rdfs:comment>
+        <rdfs:label>realized in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#refersTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#refersTo">
+        <rdfs:range rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <rdfs:comment>The object property refers to archaeological finding.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#reusedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#reusedIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isDirectlyRelatedTo"/>
+        <rdfs:comment>The object property links two of the archaeological finding that reused in another.</rdfs:comment>
+        <rdfs:label>reused in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#sameStratumAs -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#sameStratumAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/AP13_has_stratigraphic_relation"/>
+        <rdfs:comment>The property expresses two stratigraphic units that are claimed to belong to the same stratum of soil interrupted by some intervening unit.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#urbanOrEnvironmentalRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#urbanOrEnvironmentalRelatedTo">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#isDirectlyRelatedTo"/>
+        <rdfs:comment>The object property links the main finding to the archaeological finding that is urban or environmental related to.</rdfs:comment>
+        <rdfs:label>urban or environmental related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/beArcheo/suRecord-ontology#hasId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/beArcheo/suRecord-ontology#hasId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property links the identification of the stratigraphic unit catalogue record.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasAFvalue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasAFvalue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#hasValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property links the AF value.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasChronologyMotivation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasChronologyMotivation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Chronology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property links the chronology to its chronology motivation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has chronology motivation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasChronologyValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasChronologyValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#Chronology"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>This property links the value to its chronology.</rdfs:comment>
+        <rdfs:label xml:lang="en">has chronology value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasColorTerm -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasColorTerm">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property links the free color term value to insert as free text.</rdfs:comment>
+        <rdfs:label xml:lang="en">has free color term</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasDCvalue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasDCvalue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#hasValue"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Color</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Compaction</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Composition</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>This property links the distinguishing criterion value based on three ranges as compaction, composition and color.</rdfs:comment>
+        <rdfs:label xml:lang="en">has distinguishing criterion value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusionFrequencyValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasInclusionFrequencyValue">
+        <rdfs:domain rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#InclusionFrequency"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Frequent</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Medium</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Rare</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>This property links the inclusion frequency value based on three ranges such as frequent, medium, rare.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasInterpretation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasInterpretation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property links the interprations of the scientist&apos;s about the stratigraphic unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">has interpretation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasMeasurementsValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasMeasurementsValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#hasValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property links the measurements of the stratigraphic unit to its catalogue record.</rdfs:comment>
+        <rdfs:label xml:lang="en">has measurements</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasMunsellCode -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasMunsellCode">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property links the munsell color code to stratigraphic unit catalogue record.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Munsell color code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasSU_LimitValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasSU_LimitValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#hasValue"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Excavation</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>NotOriginal</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Original</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>This property links the limit of the stratigraphic unit based on three ranges excavation, not original and original.</rdfs:comment>
+        <rdfs:label xml:lang="en">has limit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasSU_SOPvalue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasSU_SOPvalue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#hasValue"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property links the state of the preservation value of the stratigraphic unit to its catalogue record.</rdfs:comment>
+        <rdfs:label xml:lang="en">has state of preservation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#hasValue"/>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#isOrganic -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#isOrganic">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>The data property to express the cause as organic which produced the stratigraphic unit.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#maxElevation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#maxElevation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The data property to express the maximum recordable elevation on the surface of the layer.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#measureUnit -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#measureUnit">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The data property to express the measured unit for the elevation of the layer.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#minElevation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#minElevation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The data property to express the minimum recordable elevation on the surface of the layer.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#GenericInclusionType -->
+
+    <owl:Class rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#GenericInclusionType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#BricksTiles"/>
+                    <rdf:Description rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#OtherGenericInclusionType"/>
+                    <rdf:Description rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#Pottery"/>
+                    <rdf:Description rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#SoilType"/>
+                    <rdf:Description rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#StoneMaterials"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:comment>The vocabulary of the inclusion types based on their generic classification.</rdfs:comment>
+        <rdfs:label xml:lang="en">Generic Inclusion Type Vocabulary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#InclusionType -->
+
+    <owl:Class rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType">
+        <rdfs:comment>The vocabulary of the inclusions which was found on the soil such as animal bones, botanical remains.</rdfs:comment>
+        <rdfs:label xml:lang="en">Inclusion Type Vocabulary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#SpecificInclusionType -->
+
+    <owl:Class rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#SpecificInclusionType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#AnimalBones"/>
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#BotanicalRemains"/>
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Ceramics"/>
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#HumanBones"/>
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Metals"/>
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Plaster"/>
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Shells"/>
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#UnworkedStones"/>
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#WorkedStones"/>
+                    <rdf:Description rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Mortar/Conglomerate"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:comment>The vocabulary of the inclusion types based on their specific classification.</rdfs:comment>
+        <rdfs:label xml:lang="en">Specific Inclusion Type Vocabulary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#StratigraphicUnit -->
+
+    <owl:Class rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#StratigraphicUnit">
+        <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <rdfs:comment>A stratigraphic unit is a volume of rock of identifiable origin and relative age range that is defined by the distinctive and dominant, easily mapped and recognizable petrographic, lithologic or paleontologic features (facies) that characterize it.</rdfs:comment>
+        <rdfs:label xml:lang="en">Stratigraphic Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing">
+        <rdfs:comment>Reference to CIDOC-CRM core class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E78_Collection -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E78_Collection">
+        <rdfs:comment>The source of the archaeological finding as collection.</rdfs:comment>
+        <rdfs:label>Collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis">
+        <rdfs:comment>CRMarchaeo class for the genesis of a stratigraphic unit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit">
+        <rdfs:comment>CRMarchaeo class for the stratigraphic unit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdfs:label>Archaeological Finding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFindingType -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFindingType">
+        <rdfs:comment>The type of the archaeological finding.</rdfs:comment>
+        <rdfs:label>Archaeological finding type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Area -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Area">
+        <rdfs:comment>The letters or codes which are used to identify the particular portion of the area where the SU was identified.</rdfs:comment>
+        <rdfs:label>Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Chronology -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Chronology">
+        <rdfs:comment>The chronology of the stratigraphic unit or archaeological finding.</rdfs:comment>
+        <rdfs:label>Chronology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Elevation -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Elevation">
+        <rdfs:comment>The class of the elevation of the stratigraphic unit.</rdfs:comment>
+        <rdfs:label>Elevation of the Stratigraphic Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#InclusionFrequency -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#InclusionFrequency">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Frequent"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Medium"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Rare"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>The frequency of the inclusions that has been found on the stratigraphic unit based on three variables such as frequent, medium and rare.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Room -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Room">
+        <rdfs:comment>The letters or codes which are used to identify the particular portion of the room where the SU was identified.</rdfs:comment>
+        <rdfs:label>Room</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SU_Color -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Color">
+        <rdfs:comment>The definition of the color is processed on wet sediment, but not saturated with water and it should take into account the entire layer.</rdfs:comment>
+        <rdfs:label>Color of the Stratigraphic Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SU_Compaction -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Compaction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Compact"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Friable"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Hard"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Loose"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Soft"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>The class of the stratigraphic unit compaction based on the the five ranges such as soft, loose, hard, friable, compact.</rdfs:comment>
+        <rdfs:label>Stratigraphic Unit Compaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis"/>
+        <rdfs:comment>The type of the formation of the SU: deposition, accumulation, erosion destruction, construction, use, cutting or other formation process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SU_Generic_InclusionType -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Generic_InclusionType">
+        <rdfs:comment>The vocabulary of the inclusion types based on their classification generally.</rdfs:comment>
+        <rdfs:label xml:lang="en">Generic Inclusion Type Vocabulary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SU_Measurements -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Measurements">
+        <rdfs:comment>The scaled measurements of the stratigraphic unit during the excavation.</rdfs:comment>
+        <rdfs:label>Measurements of the Stratigraphic Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SU_SoilMatrix -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SU_SoilMatrix">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Clay"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Sand"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SandyClay"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SandySilty"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Silt"/>
+                    <rdf:Description rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SiltyClay"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>The class of the stratigraphic unit soil/matrix based on the the five ranges such as clay, sand, SandyClay, SandySilty, Silt, SiltyClay.</rdfs:comment>
+        <rdfs:label>Stratigraphic Unit Soil/Matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SU_Specific_InclusionType -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Specific_InclusionType">
+        <rdfs:comment>The vocabulary of the inclusion types based on their classification specifically.</rdfs:comment>
+        <rdfs:label xml:lang="en">Specific Inclusion Type Vocabulary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Sector -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Sector">
+        <rdfs:comment>The letters or codes which are used to identify the particular portion of the sector where the SU was identified.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Site -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Site">
+        <rdfs:comment>The letters or codes which are used to identify the particular portion of the site where the SU was identified.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Square -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Square">
+        <rdfs:comment>The letters or codes which are used to identify the particular portion of the square where the SU was identified.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Trench -->
+
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Trench">
+        <rdfs:comment>The letters or codes which are used to identify the particular portion of the trench where the SU was identified.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#BricksTiles -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#BricksTiles">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#GenericInclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label>Bricks / Tiles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#FaunalRemains -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#FaunalRemains">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#GenericInclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label xml:lang="en">Faunal remains</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#OtherGenericInclusionType -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#OtherGenericInclusionType">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#GenericInclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label xml:lang="en">Other generic inclusion type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#Pottery -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#Pottery">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#GenericInclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label>Pottery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#SoilType -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#SoilType">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#GenericInclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label>Soil type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#StoneMaterials -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#StoneMaterials">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#GenericInclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label>Stone materials</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/beArchaeo/Archaeo-ontology#VegetalRemains -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/beArchaeo/Archaeo-ontology#VegetalRemains">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#GenericInclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label xml:lang="en">Vegetal remains</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#AnimalBones -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#AnimalBones">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label>Animal bones</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#BotanicalRemains -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#BotanicalRemains">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label>Botanical remains</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#Ceramics -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Ceramics">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#SpecificInclusionType"/>
+        <rdfs:label>Ceramics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#HumanBones -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#HumanBones">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label>Human bones</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#Metals -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Metals">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#SpecificInclusionType"/>
+        <rdfs:label>Metals</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#OtherInorganicType -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#OtherInorganicType">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#SpecificInclusionType"/>
+        <rdfs:label>Other Inorganic Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#OtherOrganicType -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#OtherOrganicType">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label>Other organic type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#Plaster -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Plaster">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#SpecificInclusionType"/>
+        <rdfs:label>Plaster</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#Shells -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Shells">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdfs:label>Shells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#UnworkedStones -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#UnworkedStones">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#SpecificInclusionType"/>
+        <rdfs:label>Unworked stones</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#WorkedStones -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#WorkedStones">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#SpecificInclusionType"/>
+        <rdfs:label>Worked stones</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/bearchaeo/Archaeo-ontology#Mortar/Conglomerate -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/bearchaeo/Archaeo-ontology#Mortar/Conglomerate">
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#InclusionType"/>
+        <rdf:type rdf:resource="http://purl.org/beArchaeo/Archaeo-ontology#SpecificInclusionType"/>
+        <rdfs:label>Mortar/Conglomerate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Accumulation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Accumulation">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Bricks_Tiles -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Bricks_Tiles">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Clay -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Clay">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_SoilMatrix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Compact -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Compact">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Compaction"/>
+        <suRecord-ontology:hasId>Compact</suRecord-ontology:hasId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Construction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Construction">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Cutting -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Cutting">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Deposition -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Deposition">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Destruction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Destruction">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Erosion -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Erosion">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#FaunalRemains -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#FaunalRemains">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Frequent -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Frequent">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#InclusionFrequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Friable -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Friable">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Compaction"/>
+        <suRecord-ontology:hasId>Friable</suRecord-ontology:hasId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Hard -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Hard">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Compaction"/>
+        <suRecord-ontology:hasId>Hard</suRecord-ontology:hasId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Loose -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Loose">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Compaction"/>
+        <suRecord-ontology:hasId>Loose</suRecord-ontology:hasId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Medium -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Medium">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#InclusionFrequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#OtherFormationProcess -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#OtherFormationProcess">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess"/>
+        <rdfs:label xml:lang="en">Other formation process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#OtherInorganicGenericType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#OtherInorganicGenericType">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#OtherOrganicGenericType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#OtherOrganicGenericType">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Pottery -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Pottery">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Rare -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Rare">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#InclusionFrequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Sand -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Sand">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_SoilMatrix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SandyClay -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SandyClay">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_SoilMatrix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SandySilty -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SandySilty">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_SoilMatrix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Silt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Silt">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_SoilMatrix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SiltyClay -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SiltyClay">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_SoilMatrix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Soft -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Soft">
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Compaction"/>
+        <suRecord-ontology:hasId>Soft</suRecord-ontology:hasId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#SoilType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#SoilType">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#StoneMaterials -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#StoneMaterials">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#Use -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#Use">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A4_Stratigraphic_Genesis"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_FormationProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bearchaeo/Archaeo-ontology#VegetalRemains -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bearchaeo/Archaeo-ontology#VegetalRemains">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <rdf:type rdf:resource="https://w3id.org/bearchaeo/Archaeo-ontology#SU_Inclusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/bearchaeo/Archaeo-ontology#SU_Limit">
+        <rdfs:label>Limits of the Stratigraphic Unit</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

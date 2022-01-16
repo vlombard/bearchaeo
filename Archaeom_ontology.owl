@@ -1,0 +1,2390 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/bearchaeo/Archaeom-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/bearchaeo/Archaeom-ontology">
+    <Prefix name="" IRI="https://purl.org/bearchaeo/Archaeom-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://purl.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E27_Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E57_Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E59_Primitive_Value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E62_String"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S10_Material_Substantial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S11_Amount_of_Matter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S13_Sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S19_Encounter_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S1_Matter_Removal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S20_Rigid_Physical_Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S22_Segment_of_Matter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S2_Sample_Taking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S3_Measurement_by_Sampling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S5_Inference_Making"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S6_Data_Evaluation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S7_Simulation_or_Prediction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S8_Categorical_Hypothesis_Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S9_Property_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AF_Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Archaeomegnetism_dating_measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Argillaceous_Inclusion_vocab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeArchaeoPropertyTypeVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeArchaeoPropertyValueVocabulary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chamotte_feature_vocab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerizedAxialTomography_measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grain_size_distribution_vocab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ICP-AES_measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inclusion_Mineralogic-petrographic_component_subtype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inclusion_Property_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inclusions_Generic_Property_Type_vocab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasurementSEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mineralogic-petrographic_component_scale_vocab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Optical_microscopy_measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orientation-alignment_vocab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Argillaceous_inclusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Chamotte_features"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-GenericPropertyType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Grain_size_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Mineral-Petro_Components"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Orientation-Alignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Relative_Abundance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Roundness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Sizes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Spacing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Matrix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLM_Measurement_of_Voids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roundness_vocab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape_vocab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spacing_vocab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thermolunesce_dating_measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#X-ray_diffraction_measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#X-ray_radiography_measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XRF_Measurement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P2_is_type_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P45_consists_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P45_is_incorporated_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P91_has_unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P9_forms_part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_assigned_dimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_dimension_was_assigned_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_described"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_was_described_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_has_dimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_is_dimension_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_observed_value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_value_was_observed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_encountered_object"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_was_object_encountered_at"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_encountered_at"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_witnessed_encounter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_measured"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_was_measured_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_is_contained_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_sampled_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_was_sample_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_removed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_was_removed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_observed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_was_observed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O9_observed_property_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O9_property_type_was_observed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#P90_has_value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observed_inclusions_property_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observed_inclusions_property_value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observed_scale"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGettyAAT_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alkali_feldspars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Argillaceous_inclusions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Argillaceous_rock_fragment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bimodal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chamotte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chamotte_features"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clay_pellet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Closed-spaced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elongated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Equant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glazes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grain_size_distribution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heterogeneous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inclusions_Generic_Property_Types"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Microfossil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mineralogic-petrographic_component_subtypes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moderate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Opaque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Open-spaced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Orientation-alignment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plag_and_green_amphibole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quartz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Relative_abundance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Relic_vessel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rounded"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roundness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Second-generation_chamotte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Single-spaced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sizes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Slips"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spacing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Strong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sub-angular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sub-rounded"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Surface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unimodal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Very_angular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Very_strong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Well_rounded"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#X"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XXX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XXXX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plant_matter–carbonized"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AF_Measurement_PLM"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/page/aat/300379521</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Archaeomegnetism_dating_measurement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/page/aat/300226163</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Argillaceous_Inclusion_vocab"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Argillaceous_rock_fragment"/>
+            <NamedIndividual IRI="#Chamotte"/>
+            <NamedIndividual IRI="#Clay_pellet"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Chamotte_feature_vocab"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Glazes"/>
+            <NamedIndividual IRI="#Relic_vessel"/>
+            <NamedIndividual IRI="#Second-generation_chamotte"/>
+            <NamedIndividual IRI="#Slips"/>
+            <NamedIndividual IRI="#Surface"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ComputerizedAxialTomography_measurement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/page/aat/300266195</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Grain_size_distribution_vocab"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Bimodal"/>
+            <NamedIndividual IRI="#Heterogeneous"/>
+            <NamedIndividual IRI="#Unimodal"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ICP-AES_measurement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/page/aat/300391463</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Inclusion_Mineralogic-petrographic_component_subtype"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Alkali_feldspars"/>
+            <NamedIndividual IRI="#Opaque"/>
+            <NamedIndividual IRI="#Plag_and_green_amphibole"/>
+            <NamedIndividual IRI="#Quartz"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Inclusions_Generic_Property_Type_vocab"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Bone"/>
+            <NamedIndividual IRI="#Microfossil"/>
+            <NamedIndividual IRI="#Shell"/>
+            <NamedIndividual IRI="#Plant_matter–carbonized"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeasurementSEM"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/aat/300224161</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Mineralogic-petrographic_component_scale_vocab"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#D"/>
+            <NamedIndividual IRI="#X"/>
+            <NamedIndividual IRI="#XX"/>
+            <NamedIndividual IRI="#XXX"/>
+            <NamedIndividual IRI="#XXXX"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Optical_microscopy_measurement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/page/aat/300379532</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Orientation-alignment_vocab"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Moderate"/>
+            <NamedIndividual IRI="#Strong"/>
+            <NamedIndividual IRI="#Very_strong"/>
+            <NamedIndividual IRI="#Weak"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Argillaceous_inclusion"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="#Argillaceous_Inclusion_vocab"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Argillaceous_inclusions"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Chamotte_features"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="#Chamotte_feature_vocab"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Chamotte_features"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-GenericPropertyType"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="#Inclusions_Generic_Property_Type_vocab"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Inclusions_Generic_Property_Types"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Grain_size_distribution"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="#Grain_size_distribution_vocab"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Grain_size_distribution"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Mineral-Petro_Components"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="#Mineralogic-petrographic_component_scale_vocab"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Mineralogic-petrographic_component_subtypes"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Orientation-Alignment"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="#Orientation-alignment_vocab"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Orientation-alignment"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Relative_Abundance"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Relative_abundance"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Roundness"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="#Roundness_vocab"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Roundness"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Shape"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="#Shape_vocab"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Shape"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Sizes"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Sizes"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Spacing"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement_PLM"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#observed_inclusions_property_value"/>
+                <Class IRI="#Spacing_vocab"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#observed_inclusions_property_type"/>
+                <NamedIndividual IRI="#Spacing"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Roundness_vocab"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Angular"/>
+            <NamedIndividual IRI="#Rounded"/>
+            <NamedIndividual IRI="#Sub-angular"/>
+            <NamedIndividual IRI="#Sub-rounded"/>
+            <NamedIndividual IRI="#Very_angular"/>
+            <NamedIndividual IRI="#Well_rounded"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Shape_vocab"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Elongated"/>
+            <NamedIndividual IRI="#Equant"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Spacing_vocab"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Closed-spaced"/>
+            <NamedIndividual IRI="#Open-spaced"/>
+            <NamedIndividual IRI="#Single-spaced"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Thermolunesce_dating_measurement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/aat/300054718</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#X-ray_diffraction_measurement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/page/aat/300379569</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#X-ray_radiography_measurement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/page/aat/300053450</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#XRF_Measurement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AF_Measurement"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasGettyAAT_type"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.getty.edu/aat/300224161</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://purl.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S10_Material_Substantial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S20_Rigid_Physical_Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E27_Site"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S20_Rigid_Physical_Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S10_Material_Substantial"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S11_Amount_of_Matter"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S10_Material_Substantial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S13_Sample"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S11_Amount_of_Matter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S19_Encounter_Event"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S1_Matter_Removal"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S20_Rigid_Physical_Feature"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S22_Segment_of_Matter"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S20_Rigid_Physical_Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S2_Sample_Taking"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S1_Matter_Removal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S3_Measurement_by_Sampling"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S3_Measurement_by_Sampling"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S2_Sample_Taking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S5_Inference_Making"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S6_Data_Evaluation"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S5_Inference_Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S7_Simulation_or_Prediction"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S5_Inference_Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S8_Categorical_Hypothesis_Building"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S5_Inference_Making"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S9_Property_Type"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AF_Measurement"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AF_Measurement_PLM"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archaeomegnetism_dating_measurement"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Argillaceous_Inclusion_vocab"/>
+        <Class IRI="#BeArchaeoPropertyValueVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeArchaeoPropertyTypeVocabulary"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S9_Property_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeArchaeoPropertyValueVocabulary"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chamotte_feature_vocab"/>
+        <Class IRI="#BeArchaeoPropertyValueVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerizedAxialTomography_measurement"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grain_size_distribution_vocab"/>
+        <Class IRI="#BeArchaeoPropertyValueVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ICP-AES_measurement"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inclusion_Mineralogic-petrographic_component_subtype"/>
+        <Class IRI="#Inclusion_Property_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <Class IRI="#BeArchaeoPropertyTypeVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inclusions_Generic_Property_Type_vocab"/>
+        <Class IRI="#BeArchaeoPropertyValueVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasurementSEM"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mineralogic-petrographic_component_scale_vocab"/>
+        <Class IRI="#BeArchaeoPropertyValueVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Optical_microscopy_measurement"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orientation-alignment_vocab"/>
+        <Class IRI="#BeArchaeoPropertyValueVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Argillaceous_inclusion"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Chamotte_features"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-GenericPropertyType"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Grain_size_distribution"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Mineral-Petro_Components"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Orientation-Alignment"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Relative_Abundance"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Roundness"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Shape"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Sizes"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Inclusions-Spacing"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Matrix"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLM_Measurement_of_Voids"/>
+        <Class IRI="#AF_Measurement_PLM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roundness_vocab"/>
+        <Class IRI="#BeArchaeoPropertyValueVocabulary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SU_measurement"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shape_vocab"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spacing_vocab"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thermolunesce_dating_measurement"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#X-ray_diffraction_measurement"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#X-ray_radiography_measurement"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XRF_Measurement"/>
+        <Class IRI="#AF_Measurement"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Mineralogic-petrographic_component_subtype"/>
+        <NamedIndividual IRI="#Alkali_feldspars"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Roundness_vocab"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Argillaceous_inclusions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Argillaceous_Inclusion_vocab"/>
+        <NamedIndividual IRI="#Argillaceous_rock_fragment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grain_size_distribution_vocab"/>
+        <NamedIndividual IRI="#Bimodal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusions_Generic_Property_Type_vocab"/>
+        <NamedIndividual IRI="#Bone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Argillaceous_Inclusion_vocab"/>
+        <NamedIndividual IRI="#Chamotte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Chamotte_features"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Argillaceous_Inclusion_vocab"/>
+        <NamedIndividual IRI="#Clay_pellet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spacing_vocab"/>
+        <NamedIndividual IRI="#Closed-spaced"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mineralogic-petrographic_component_scale_vocab"/>
+        <NamedIndividual IRI="#D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shape_vocab"/>
+        <NamedIndividual IRI="#Elongated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shape_vocab"/>
+        <NamedIndividual IRI="#Equant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chamotte_feature_vocab"/>
+        <NamedIndividual IRI="#Glazes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Grain_size_distribution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grain_size_distribution_vocab"/>
+        <NamedIndividual IRI="#Heterogeneous"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Inclusions_Generic_Property_Types"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusions_Generic_Property_Type_vocab"/>
+        <NamedIndividual IRI="#Microfossil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Mineralogic-petrographic_component_subtypes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Orientation-alignment_vocab"/>
+        <NamedIndividual IRI="#Moderate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Mineralogic-petrographic_component_subtype"/>
+        <NamedIndividual IRI="#Opaque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spacing_vocab"/>
+        <NamedIndividual IRI="#Open-spaced"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Orientation-alignment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Mineralogic-petrographic_component_subtype"/>
+        <NamedIndividual IRI="#Plag_and_green_amphibole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Mineralogic-petrographic_component_subtype"/>
+        <NamedIndividual IRI="#Quartz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Relative_abundance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chamotte_feature_vocab"/>
+        <NamedIndividual IRI="#Relic_vessel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Roundness_vocab"/>
+        <NamedIndividual IRI="#Rounded"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Roundness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chamotte_feature_vocab"/>
+        <NamedIndividual IRI="#Second-generation_chamotte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Shape"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusions_Generic_Property_Type_vocab"/>
+        <NamedIndividual IRI="#Shell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Spacing_vocab"/>
+        <NamedIndividual IRI="#Single-spaced"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Sizes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chamotte_feature_vocab"/>
+        <NamedIndividual IRI="#Slips"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusion_Property_Type"/>
+        <NamedIndividual IRI="#Spacing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Orientation-alignment_vocab"/>
+        <NamedIndividual IRI="#Strong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Roundness_vocab"/>
+        <NamedIndividual IRI="#Sub-angular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Roundness_vocab"/>
+        <NamedIndividual IRI="#Sub-rounded"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chamotte_feature_vocab"/>
+        <NamedIndividual IRI="#Surface"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grain_size_distribution_vocab"/>
+        <NamedIndividual IRI="#Unimodal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Roundness_vocab"/>
+        <NamedIndividual IRI="#Very_angular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Orientation-alignment_vocab"/>
+        <NamedIndividual IRI="#Very_strong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Orientation-alignment_vocab"/>
+        <NamedIndividual IRI="#Weak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Roundness_vocab"/>
+        <NamedIndividual IRI="#Well_rounded"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mineralogic-petrographic_component_scale_vocab"/>
+        <NamedIndividual IRI="#X"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mineralogic-petrographic_component_scale_vocab"/>
+        <NamedIndividual IRI="#XX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mineralogic-petrographic_component_scale_vocab"/>
+        <NamedIndividual IRI="#XXX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mineralogic-petrographic_component_scale_vocab"/>
+        <NamedIndividual IRI="#XXXX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inclusions_Generic_Property_Type_vocab"/>
+        <NamedIndividual IRI="#Plant_matter–carbonized"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <NamedIndividual IRI="#Angular"/>
+        <Literal>Angular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <NamedIndividual IRI="#Rounded"/>
+        <Literal>Rounded</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <NamedIndividual IRI="#Sub-angular"/>
+        <Literal>Sub-angular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <NamedIndividual IRI="#Sub-rounded"/>
+        <Literal>Sub-rounded</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <NamedIndividual IRI="#Very_angular"/>
+        <Literal>Very angular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <NamedIndividual IRI="#Well_rounded"/>
+        <Literal>Well rounded</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#observed_inclusions_property_type"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O9_observed_property_type"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#observed_inclusions_property_value"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_observed_value"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#observed_scale"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_observed_value"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P2_is_type_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P9_forms_part_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_assigned_dimension"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_dimension_was_assigned_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_described"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_was_described_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_has_dimension"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_is_dimension_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_observed_value"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_value_was_observed_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_encountered_object"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_was_object_encountered_at"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_encountered_at"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_witnessed_encounter"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_measured"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_was_measured_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_contains"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_is_contained_in"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_sampled_from"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_was_sample_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_removed"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_was_removed_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_observed"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_was_observed_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O9_observed_property_type"/>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O9_property_type_was_observed_by"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_assigned_dimension"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S6_Data_Evaluation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_described"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S6_Data_Evaluation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_has_dimension"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_observed_value"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_encountered_object"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S19_Encounter_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_encountered_at"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S19_Encounter_Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_measured"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_contains"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S10_Material_Substantial"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_sampled_from"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S2_Sample_Taking"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_removed"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S2_Sample_Taking"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_observed"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#observed_inclusions_property_type"/>
+        <Class IRI="#PLM_Measurement_of_Inclusions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#observed_inclusions_property_value"/>
+        <Class IRI="#PLM_Measurement_of_Inclusions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E62_String"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/P91_has_unit"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_assigned_dimension"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_described"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_has_dimension"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_observed_value"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_encountered_object"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_encountered_at"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_measured"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_contains"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S10_Material_Substantial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_sampled_from"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S10_Material_Substantial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_removed"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S13_Sample"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_observed"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#P90_has_value"/>
+        <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E59_Primitive_Value"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#observed_inclusions_property_type"/>
+        <Class IRI="#Inclusion_Property_Type"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGettyAAT_type"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding</IRI>
+        <Literal>Be-Archaeo class represents archaeological finding.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment</IRI>
+        <Literal>E13 Attribute Assignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing</IRI>
+        <Literal>E18 Physical Thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity</IRI>
+        <Literal>E1 CRM Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature</IRI>
+        <Literal>E25 Man-Made Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E27_Site</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E27_Site</IRI>
+        <Literal>E27 Site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E53_Place</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E53_Place</IRI>
+        <Literal>E53 Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E54_Dimension</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E54_Dimension</IRI>
+        <Literal>E54 Dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E55_Type</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E55_Type</IRI>
+        <Literal>E55 Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E57_Material</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E57_Material</IRI>
+        <Literal>E57 Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit</IRI>
+        <Literal>E58 Measurement Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E59_Primitive_Value</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E59_Primitive_Value</IRI>
+        <Literal>E59 Primitive Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E62_String</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E62_String</IRI>
+        <Literal>E62 String</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E70_Thing</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E70_Thing</IRI>
+        <Literal>E70 Thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E7_Activity</IRI>
+        <Literal>Reference to CIDOC-CRM core class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/E7_Activity</IRI>
+        <Literal>E7 Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P2_has_type</IRI>
+        <Literal>Reference to CIDOC-CRM core property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P2_has_type</IRI>
+        <Literal>P2 has type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P2_is_type_of</IRI>
+        <Literal>Reference to CIDOC-CRM core property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P2_is_type_of</IRI>
+        <Literal>P2 is type of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P3_has_note</IRI>
+        <Literal>Reference to CIDOC-CRM core property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P3_has_note</IRI>
+        <Literal>P3 has note</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P45_consists_of</IRI>
+        <Literal>Reference to CIDOC-CRM core property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P45_consists_of</IRI>
+        <Literal>P45 consists of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P45_is_incorporated_in</IRI>
+        <Literal>Reference to CIDOC-CRM core property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P45_is_incorporated_in</IRI>
+        <Literal>P45 is incorporated in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P91_has_unit</IRI>
+        <Literal>P91 has unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P9_consists_of</IRI>
+        <Literal>Reference to CIDOC-CRM core property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P9_consists_of</IRI>
+        <Literal>P9 consists of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P9_forms_part_of</IRI>
+        <Literal>Reference to CIDOC-CRM core property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/P9_forms_part_of</IRI>
+        <Literal>P9 forms part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMarchaeo/A8_Stratigraphic_Unit</IRI>
+        <Literal>Reference to CIDOC-CRM CRMarchaeo class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_assigned_dimension</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_assigned_dimension</IRI>
+        <Literal>O10 assigned dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_dimension_was_assigned_by</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O10_dimension_was_assigned_by</IRI>
+        <Literal>O10 dimension was assigned by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_described</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_described</IRI>
+        <Literal>O11 described</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_was_described_by</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O11_was_described_by</IRI>
+        <Literal>O11 was described by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_has_dimension</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_has_dimension</IRI>
+        <Literal>O12 has dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_is_dimension_of</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O12_is_dimension_of</IRI>
+        <Literal>O12 is dimension of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_observed_value</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_observed_value</IRI>
+        <Literal>O16 observed value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_value_was_observed_by</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O16_value_was_observed_by</IRI>
+        <Literal>O16 value was observed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_encountered_object</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_encountered_object</IRI>
+        <Literal>O19 encountered object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_was_object_encountered_at</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O19_was_object_encountered_at</IRI>
+        <Literal>O19 was object encountered at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_encountered_at</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_encountered_at</IRI>
+        <Literal>O21 encountered at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_witnessed_encounter</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O21_witnessed_encounter</IRI>
+        <Literal>O21 witnessed encounter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_measured</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_measured</IRI>
+        <Literal>O24 measured</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_was_measured_by</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O24_was_measured_by</IRI>
+        <Literal>O24 was measured by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_contains</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_contains</IRI>
+        <Literal>O25 contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_is_contained_in</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O25_is_contained_in</IRI>
+        <Literal>O25 is contained in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_sampled_from</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_sampled_from</IRI>
+        <Literal>O3 sampled from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_was_sample_by</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O3_was_sample_by</IRI>
+        <Literal>O3 was sample by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_removed</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_removed</IRI>
+        <Literal>O5 removed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_was_removed_by</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O5_was_removed_by</IRI>
+        <Literal>O5 was removed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_observed</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_observed</IRI>
+        <Literal>O8 observed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_was_observed_by</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O8_was_observed_by</IRI>
+        <Literal>O8 was observed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O9_observed_property_type</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O9_observed_property_type</IRI>
+        <Literal>O9 observed property type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O9_property_type_was_observed_by</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/O9_property_type_was_observed_by</IRI>
+        <Literal>O9 property type was observed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S10_Material_Substantial</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S10_Material_Substantial</IRI>
+        <Literal>S10 Material Substantial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S11_Amount_of_Matter</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S11_Amount_of_Matter</IRI>
+        <Literal>S11 Amount of Matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S13_Sample</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S13_Sample</IRI>
+        <Literal>S13 Sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity</IRI>
+        <Literal>S15 Observable Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S19_Encounter_Event</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S19_Encounter_Event</IRI>
+        <Literal>S19 Encounter Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S1_Matter_Removal</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S1_Matter_Removal</IRI>
+        <Literal>S1 Matter Removal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S20_Rigid_Physical_Feature</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S20_Rigid_Physical_Feature</IRI>
+        <Literal>S20 Rigid Physical Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S21_Measurement</IRI>
+        <Literal>S21 Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S22_Segment_of_Matter</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S22_Segment_of_Matter</IRI>
+        <Literal>S22 Segment of Matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S2_Sample_Taking</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S2_Sample_Taking</IRI>
+        <Literal>S2 Sample Taking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S3_Measurement_by_Sampling</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S3_Measurement_by_Sampling</IRI>
+        <Literal>S3 Measurement by Sampling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S4_Observation</IRI>
+        <Literal>S4 Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S5_Inference_Making</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S5_Inference_Making</IRI>
+        <Literal>S5 Inference Making</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S6_Data_Evaluation</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S6_Data_Evaluation</IRI>
+        <Literal>S6 Data Evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S7_Simulation_or_Prediction</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S7_Simulation_or_Prediction</IRI>
+        <Literal>S7 Simulation or Prediction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S8_Categorical_Hypothesis_Building</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S8_Categorical_Hypothesis_Building</IRI>
+        <Literal>S8 Categorical Hypothesis Building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S9_Property_Type</IRI>
+        <Literal>Reference to CIDOC-CRM CRMsci class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.cidoc-crm.org/cidoc-crm/CRMsci/S9_Property_Type</IRI>
+        <Literal>S9 Property Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/bearchaeo/hasId</IRI>
+        <Literal xml:lang="en">This data property concerns the expression, used in the forms filled by the scientists, about some property or value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/bearchaeo/hasId</IRI>
+        <Literal xml:lang="en">has id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AF_Measurement</IRI>
+        <Literal xml:lang="en">Measurement of Archaeological Finding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AF_Measurement_PLM</IRI>
+        <Literal xml:lang="en">Measurement with Polarized Light Microscopy (PLM)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Angular</IRI>
+        <Literal xml:lang="en">Angular</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Archaeomegnetism_dating_measurement</IRI>
+        <Literal xml:lang="en">Measurement with archaeomegnetism dating (AM)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Argillaceous_Inclusion_vocab</IRI>
+        <Literal>Argillaceous inclusion vocab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Argillaceous_rock_fragment</IRI>
+        <Literal xml:lang="en">Argillaceous rock fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BeArchaeoPropertyTypeVocabulary</IRI>
+        <Literal xml:lang="en">BeArchaeo Property Type Vocabulary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BeArchaeoPropertyValueVocabulary</IRI>
+        <Literal xml:lang="en">BeArchaeo Property Value Vocabulary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chamotte_feature_vocab</IRI>
+        <Literal>Chamotte feature vocab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ComputerizedAxialTomography_measurement</IRI>
+        <Literal xml:lang="en">Measurement with Computerized Axial Tomography (CAT)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Grain_size_distribution_vocab</IRI>
+        <Literal>Grain size distribution vocab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ICP-AES_measurement</IRI>
+        <Literal xml:lang="en">Measurement with inductively coupled plasma atomic emission spectrometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Inclusion_Property_Type</IRI>
+        <Literal>Vocabulary of the archaeometric properties of inclusions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Inclusion_Property_Type</IRI>
+        <Literal>Inclusion property type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Inclusions_Generic_Property_Type_vocab</IRI>
+        <Literal>Inclusions Generic Property Type vocab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MeasurementSEM</IRI>
+        <Literal xml:lang="en">Measurement with Scanning Electron Microscope (SEM)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mineralogic-petrographic_component_scale_vocab</IRI>
+        <Literal>Mineralogic-petrographic component scale vocab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Optical_microscopy_measurement</IRI>
+        <Literal xml:lang="en">Measurement with optical microscopy (OM)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Orientation-alignment_vocab</IRI>
+        <Literal>Orientation-alignment vocab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#P90_has_value</IRI>
+        <Literal>P90 has value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PLM_Measurement_of_Inclusions</IRI>
+        <Literal>PLM Measurement of Inclusions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PLM_Measurement_of_Matrix</IRI>
+        <Literal>PLM Measurement of Matrix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PLM_Measurement_of_Voids</IRI>
+        <Literal>PLM Measurement of Voids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rounded</IRI>
+        <Literal xml:lang="en">Rounded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Roundness_vocab</IRI>
+        <Literal>Roundness vocab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SU_measurement</IRI>
+        <Literal xml:lang="en">Measurement of Stratigraphic Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Shape_vocab</IRI>
+        <Literal>Shape vocab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spacing_vocab</IRI>
+        <Literal>Spacing vocab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sub-angular</IRI>
+        <Literal xml:lang="en">Sub-angular</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sub-rounded</IRI>
+        <Literal xml:lang="en">Sub-rounded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Thermolunesce_dating_measurement</IRI>
+        <Literal xml:lang="en">Measurement with Thermolunesce dating (TL)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Very_angular</IRI>
+        <Literal xml:lang="en">Very angular</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Well_rounded</IRI>
+        <Literal xml:lang="en">Well rounded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#X-ray_diffraction_measurement</IRI>
+        <Literal xml:lang="en">Measurement with X-ray diffraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#X-ray_radiography_measurement</IRI>
+        <Literal xml:lang="en">Measurement with X-ray radiography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XRF_Measurement</IRI>
+        <Literal xml:lang="en">Measurement with X-ray Fluorescence spectrometry (XRF)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGettyAAT_type</IRI>
+        <Literal>The data property of the type of the Getty AAT vocabulary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasGettyAAT_type</IRI>
+        <Literal xml:lang="en">has Getty AAT type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#observed_inclusions_property_type</IRI>
+        <Literal xml:lang="en">Specific subproperty for the case of inclusions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observed_inclusions_property_type</IRI>
+        <Literal>observed inclusions property type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#observed_inclusions_property_value</IRI>
+        <Literal xml:lang="en">Specific property value for the case of inclusions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observed_inclusions_property_value</IRI>
+        <Literal>observed inclusions property value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#observed_scale</IRI>
+        <Literal xml:lang="en">The scale (value) assigned to some item (observable property type or subtype).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observed_scale</IRI>
+        <Literal xml:lang="en">observed scale</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

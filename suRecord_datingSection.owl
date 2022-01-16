@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/bearchaeo/suRecordDatation-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/bearchaeo/suRecordDatation-ontology">
+    <Prefix name="" IRI="https://purl.org/bearchaeo/suRecordDatation-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="suDat" IRI="http://purl.org/beArchaeo/suRecordDatation-ontology"/>
+    <Prefix name="suRec" IRI="http://purl.org/beArchaeo/suRecord-ontology#"/>
+    <Prefix name="beArchaeo" IRI="http://purl.org/beArchaeo/Archaeo-ontology#"/>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/Archaeo-ontology#AF_catalogueRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_datationSection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDatationSection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDatingElement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInterpretation_f"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSU_Chronology_f"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#SU_datationSection"/>
+        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDatationSection"/>
+        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDatingElement"/>
+        <Class IRI="#SU_datationSection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDatationSection"/>
+        <Class IRI="#SU_datationSection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDatingElement"/>
+        <Class IRI="https://purl.org/bearchaeo/Archaeo-ontology#AF_catalogueRecord"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInterpretation_f"/>
+        <Class IRI="#SU_datationSection"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSU_Chronology_f"/>
+        <Class IRI="#SU_datationSection"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInterpretation_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSU_Chronology_f"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SU_datationSection</IRI>
+        <Literal>The class of datation section based on the interpretation and dating of the Stratigraphic Unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDatationSection</IRI>
+        <Literal>This property is related to the interpretation and dating of the Stratigraphic Unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDatationSection</IRI>
+        <Literal>DATATION SECTION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDatingElement</IRI>
+        <Literal>This property implements the field of &apos;dating element&apos; of the datation section of SU catalogue record. It is to specify on what basis the dating takes place in absolute and/or relative terms of the SU. It examines from the finds found inside the unit, or later in the lab, which constitute the terminus post quem for dating SU.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDatingElement</IRI>
+        <Literal xml:lang="en">DATING ELEMENT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInterpretation_f</IRI>
+        <Literal>This property represents the interpretation of the stratigraphic unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInterpretation_f</IRI>
+        <Literal>INTERPRETATION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSU_Chronology_f</IRI>
+        <Literal>This property is about the chronology of the stratigraphic unit. It is a string that will be filled in the lab after the examination of the stratigraphic unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSU_Chronology_f</IRI>
+        <Literal>CHRONOLOGY</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

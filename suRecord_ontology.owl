@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/bearchaeo/suRecord-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/bearchaeo/suRecord-ontology">
+    <Prefix name="" IRI="https://purl.org/bearchaeo/suRecord-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="https://purl.org/bearchaeo/Archaeo-ontology#StratigraphicUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_catalogueRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SU_subfield"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/arco/catalogue/describes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/arco/catalogue/isDescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasField"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubfield"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFieldOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSectionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubfieldOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFieldValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasId"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#SU_catalogueRecord"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/arco/catalogue/describes"/>
+            <Class IRI="https://purl.org/bearchaeo/Archaeo-ontology#StratigraphicUnit"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SU_field"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isFieldOf"/>
+                <Class IRI="#SU_section"/>
+            </ObjectSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasId"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SU_section"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSectionOf"/>
+            <Class IRI="#SU_catalogueRecord"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SU_subfield"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubfieldOf"/>
+            <Class IRI="#SU_section"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://w3id.org/arco/catalogue/describes"/>
+        <ObjectProperty IRI="https://w3id.org/arco/catalogue/isDescribedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasField"/>
+        <ObjectProperty IRI="#isFieldOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSection"/>
+        <ObjectProperty IRI="#isSectionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSubfield"/>
+        <ObjectProperty IRI="#isSubfieldOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasField"/>
+        <Class IRI="#SU_section"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSection"/>
+        <Class IRI="#SU_catalogueRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubfield"/>
+        <Class IRI="#SU_field"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasField"/>
+        <Class IRI="#SU_field"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSection"/>
+        <Class IRI="#SU_section"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubfield"/>
+        <Class IRI="#SU_field"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasSection"/>
+            <ObjectProperty IRI="#hasField"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasField"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasId"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFieldValue"/>
+        <Class IRI="#SU_field"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
