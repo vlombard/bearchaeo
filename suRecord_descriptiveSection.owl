@@ -41,16 +41,16 @@
     
 
 
-    <!-- https://purl.org/bearchaeo/suRecord-ontology#hasSection -->
+    <!-- https://w3id.org/bearchaeo/suRecord-ontology#hasSection -->
 
-    <owl:ObjectProperty rdf:about="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/suRecord-ontology#hasSection"/>
     
 
 
     <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#hasDescriptiveSection -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#hasDescriptiveSection">
-        <rdfs:subPropertyOf rdf:resource="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bearchaeo/suRecord-ontology#hasSection"/>
         <rdfs:range rdf:resource="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection"/>
         <rdfs:comment>This section is used to describe the unit through its the first and overall interpretations which were employed by the archaeologist to identify such a stratum in the soil and inclusions.</rdfs:comment>
         <rdfs:label>DESCRIPTIVE SECTION</rdfs:label>
@@ -441,22 +441,22 @@
     
 
 
-    <!-- https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord -->
+    <!-- https://w3id.org/bearchaeo/suRecord-ontology#SU_catalogueRecord -->
 
-    <owl:Class rdf:about="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
     
 
 
-    <!-- https://purl.org/bearchaeo/suRecord-ontology#SU_section -->
+    <!-- https://w3id.org/bearchaeo/suRecord-ontology#SU_section -->
 
-    <owl:Class rdf:about="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+    <owl:Class rdf:about="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     
 
 
     <!-- https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection -->
 
     <owl:Class rdf:about="https://w3id.org/bearchaeo/suRecordDescription-ontology#SU_descriptiveSection">
-        <rdfs:subClassOf rdf:resource="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     </owl:Class>
     
 
