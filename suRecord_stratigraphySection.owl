@@ -6,155 +6,155 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/bearchaeo/suRecordStratigraphy-ontology">
-    <Prefix name="" IRI="https://purl.org/bearchaeo/suRecordStratigraphy-ontology"/>
+    <Prefix name="" IRI="https://w3id.org/bearchaeo/suRecordStratigraphy-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SU_stratigraphicSection"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#abuts_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#abuts_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#covers_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#covers_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#cuts_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#cuts_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#earlierThan_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#earlierThan_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#fills_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#fills_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isBoundTo_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isBoundTo_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isCoveredBy_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isCoveredBy_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isCutBy_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isCutBy_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isEqualTo_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isEqualTo_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isFilledBy_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isFilledBy_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#laterThan_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#laterThan_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/suRecord-ontology#hasSection"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasStratigraphySection"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#SU_stratigraphicSection"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#abuts_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#abuts_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#covers_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#covers_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#cuts_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#cuts_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#earlierThan_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#earlierThan_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#fills_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#fills_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isBoundTo_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isBoundTo_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isCoveredBy_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isCoveredBy_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isCutBy_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isCutBy_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isEqualTo_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isEqualTo_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isFilledBy_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isFilledBy_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#laterThan_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#laterThan_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasStratigraphySection"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/suRecord-ontology#hasSection"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#abuts_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#abuts_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#covers_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isCoveredBy_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#covers_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isCoveredBy_f"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#cuts_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isCutBy_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#cuts_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isCutBy_f"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#earlierThan_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#laterThan_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#earlierThan_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#laterThan_f"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#fills_f"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isFilledBy_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#fills_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isFilledBy_f"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isEqualTo_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isEqualTo_f"/>
     </SymmetricObjectProperty>
     <TransitiveObjectProperty>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#isEqualTo_f"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#isEqualTo_f"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasStratigraphySection"/>
@@ -162,132 +162,132 @@
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#abuts_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#abuts_f</IRI>
         <Literal>This property expresses the object property &apos;abuts&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#abuts_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#abuts_f</IRI>
         <Literal>abuts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#covers_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#covers_f</IRI>
         <Literal>This property expresses the object property &apos;covers&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#covers_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#covers_f</IRI>
         <Literal>covers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#cuts_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#cuts_f</IRI>
         <Literal>This property expresses the object property &apos;cuts&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#cuts_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#cuts_f</IRI>
         <Literal>cuts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#earlierThan_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#earlierThan_f</IRI>
         <Literal>This property expresses the object property &apos;earlierThan&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#earlierThan_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#earlierThan_f</IRI>
         <Literal>earlier than</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#fills_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#fills_f</IRI>
         <Literal>This property expresses the object property &apos;fills&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#fills_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#fills_f</IRI>
         <Literal>fills</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f</IRI>
         <Literal>This property expresses the object property &apos;hasStratigraphicRelation&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#hasStratigraphicRelation_f</IRI>
         <Literal>has stratigraphic relation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f</IRI>
         <Literal>This property expresses the object property &apos;isAbuttedTo&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isAbuttedTo_f</IRI>
         <Literal>is abutted to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isBoundTo_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isBoundTo_f</IRI>
         <Literal>This property expresses the object property &apos;isBoundTo&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isBoundTo_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isBoundTo_f</IRI>
         <Literal>is bound to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isCoveredBy_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isCoveredBy_f</IRI>
         <Literal>This property expresses the object property &apos;isCoveredBy&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isCoveredBy_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isCoveredBy_f</IRI>
         <Literal>is covered by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isCutBy_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isCutBy_f</IRI>
         <Literal>This property expresses the object property &apos;isCutBy&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isCutBy_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isCutBy_f</IRI>
         <Literal>is cut by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isEqualTo_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isEqualTo_f</IRI>
         <Literal>The property &apos;isEqualTo&apos; expresses the object property &apos;sameStratumAs&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record. The name changes from the Archeological ontology because &apos;isEqualTo&apos; is reported in the official forms provided by the Italian Ministry of Culture.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isEqualTo_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isEqualTo_f</IRI>
         <Literal>is equal to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isFilledBy_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isFilledBy_f</IRI>
         <Literal>This property expresses the object property &apos;isFilledBy&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#isFilledBy_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#isFilledBy_f</IRI>
         <Literal>is filled by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#laterThan_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#laterThan_f</IRI>
         <Literal>This property expresses the object property &apos;laterThan&apos; between stratigraphic units. It encodes one of the fields of the stratigtraphy section of the SU catalgoue record. Its range is URI of one SU catalogue record and its domain is the stratigraphy section of another SU catalogue record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/Archaeo-ontology#laterThan_f</IRI>
+        <IRI>https://w3id.org/bearchaeo/Archaeo-ontology#laterThan_f</IRI>
         <Literal>later than</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
