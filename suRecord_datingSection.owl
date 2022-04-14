@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/bearchaeo/suRecordDatation-ontology">
-    <Prefix name="" IRI="https://purl.org/bearchaeo/suRecordDatation-ontology"/>
+    <Prefix name="" IRI="https://w3id.org/bearchaeo/suRecordDatation-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -16,19 +16,19 @@
     <Prefix name="suRec" IRI="http://purl.org/beArchaeo/suRecord-ontology#"/>
     <Prefix name="beArchaeo" IRI="http://purl.org/beArchaeo/Archaeo-ontology#"/>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/Archaeo-ontology#AF_catalogueRecord"/>
+        <Class IRI="https://w3id.org/bearchaeo/Archaeo-ontology#AF_catalogueRecord"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SU_datationSection"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/suRecord-ontology#hasSection"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasDatationSection"/>
@@ -44,11 +44,11 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="#SU_datationSection"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasDatationSection"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/suRecord-ontology#hasSection"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDatingElement"/>
@@ -60,7 +60,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDatingElement"/>
-        <Class IRI="https://purl.org/bearchaeo/Archaeo-ontology#AF_catalogueRecord"/>
+        <Class IRI="https://w3id.org/bearchaeo/Archaeo-ontology#AF_catalogueRecord"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#hasInterpretation_f"/>
