@@ -6,14 +6,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/bearchaeo/Archaeom-ontology">
-    <Prefix name="" IRI="https://purl.org/bearchaeo/Archaeom-ontology"/>
+    <Prefix name="" IRI="https://w3id.org/bearchaeo/Archaeom-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="http://purl.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <Class IRI="http://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
@@ -337,7 +337,7 @@
         <ObjectProperty IRI="#observed_scale"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <DataProperty IRI="https://w3id.org/bearchaeo/hasId"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasGettyAAT_type"/>
@@ -836,7 +836,7 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="http://purl.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
+        <Class IRI="http://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding"/>
         <Class IRI="http://www.cidoc-crm.org/cidoc-crm/CRMsci/S15_Observable_Entity"/>
     </SubClassOf>
     <SubClassOf>
@@ -1288,32 +1288,32 @@
         <NamedIndividual IRI="#Plant_matter–carbonized"/>
     </ClassAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <DataProperty IRI="https://w3id.org/bearchaeo/hasId"/>
         <NamedIndividual IRI="#Angular"/>
         <Literal>Angular</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <DataProperty IRI="https://w3id.org/bearchaeo/hasId"/>
         <NamedIndividual IRI="#Rounded"/>
         <Literal>Rounded</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <DataProperty IRI="https://w3id.org/bearchaeo/hasId"/>
         <NamedIndividual IRI="#Sub-angular"/>
         <Literal>Sub-angular</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <DataProperty IRI="https://w3id.org/bearchaeo/hasId"/>
         <NamedIndividual IRI="#Sub-rounded"/>
         <Literal>Sub-rounded</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <DataProperty IRI="https://w3id.org/bearchaeo/hasId"/>
         <NamedIndividual IRI="#Very_angular"/>
         <Literal>Very angular</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <DataProperty IRI="https://w3id.org/bearchaeo/hasId"/>
         <NamedIndividual IRI="#Well_rounded"/>
         <Literal>Well rounded</Literal>
     </DataPropertyAssertion>
@@ -1510,7 +1510,7 @@
         <Class IRI="#Inclusion_Property_Type"/>
     </ObjectPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://purl.org/bearchaeo/hasId"/>
+        <DataProperty IRI="https://w3id.org/bearchaeo/hasId"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1519,7 +1519,7 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding</IRI>
+        <IRI>http://w3id.org/bearchaeo/Archaeo-ontology#ArchaeologicalFinding</IRI>
         <Literal>Be-Archaeo class represents archaeological finding.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2154,12 +2154,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://purl.org/bearchaeo/hasId</IRI>
+        <IRI>https://w3id.org/bearchaeo/hasId</IRI>
         <Literal xml:lang="en">This data property concerns the expression, used in the forms filled by the scientists, about some property or value.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://purl.org/bearchaeo/hasId</IRI>
+        <IRI>https://w3id.org/bearchaeo/hasId</IRI>
         <Literal xml:lang="en">has id</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
