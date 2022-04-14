@@ -6,23 +6,23 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/bearchaeo/suRecordRegistry-ontology">
-    <Prefix name="" IRI="https://purl.org/bearchaeo/suRecordRegistry-ontology"/>
+    <Prefix name="" IRI="https://w3id.org/bearchaeo/suRecordRegistry-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_field"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_field"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_subfield"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_subfield"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SU_registryField"/>
@@ -153,7 +153,7 @@
     <EquivalentClasses>
         <Class IRI="#SU_registrySection"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+            <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasField"/>
                 <Class IRI="#SU_registryField"/>
@@ -162,15 +162,15 @@
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#SU_registryField"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_field"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_field"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SU_registrySection"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SU_registrySubfield"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_subfield"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_subfield"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TMA_f"/>
