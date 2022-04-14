@@ -6,23 +6,23 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/bearchaeo/suRecordSampling-ontology">
-    <Prefix name="" IRI="https://purl.org/bearchaeo/suRecordSampling-ontology"/>
+    <Prefix name="" IRI="https://w3id.org/bearchaeo/suRecordSampling-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_catalogueRecord"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_field"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_field"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_subfield"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_subfield"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SU_samplingSection"/>
@@ -34,7 +34,7 @@
         <Class IRI="#SmallFinds_f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/suRecord-ontology#hasSection"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSamplingSection"/>
@@ -68,19 +68,19 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="#SU_samplingSection"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_section"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_section"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SmallFindRow_sf"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_subfield"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_subfield"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SmallFinds_f"/>
-        <Class IRI="https://purl.org/bearchaeo/suRecord-ontology#SU_field"/>
+        <Class IRI="https://w3id.org/bearchaeo/suRecord-ontology#SU_field"/>
     </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasSamplingSection"/>
-        <ObjectProperty IRI="https://purl.org/bearchaeo/suRecord-ontology#hasSection"/>
+        <ObjectProperty IRI="https://w3id.org/bearchaeo/suRecord-ontology#hasSection"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSmallFindRow_sf"/>
